@@ -27,29 +27,21 @@
 
 <div class="site_bar">
     <nav>
-        <ul>
-            <li class="home"><a href="#">Моя страница</a><a href="#" class="edit">ред.</a></li>
-            <li><a href="#">Новости</a><span>1</span></li>
-            <li><a href="#">Сообщения</a><span>1</span></li>
-            <li><a href="#">Люди</a></li>
-            <li><a href="#">Сообщества</a></li>
-            <li><a href="#">Ресурсы</a></li>
-            <li><a href="#">Навыки</a></li>
-            <li><a href="#">Идеи</a></li>
-            <li><a href="#" class="active">Проекты</a></li>
-            <li><a href="#">Организации</a></li>
-            <li><a href="#">Приложения</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">Настройки</a></li>
-            <li><a href="#">Диск</a></li>
-            <li><a href="#">Связи</a></li>
-            <li><a href="#">Знания</a></li>
-            <li><a href="#">Достижения</a></li>
-            <li><a href="#">Заметки</a></li>
-            <li><a href="#">ЖКХ</a></li>
-            <li><a href="#">Предложения</a></li>
-        </ul>
+      <ul>
+        <li class="home"><a href="user.html">Моя страница</a><a href="#" class="edit">ред.</a></li>
+        <li><a href="dashboard.html" class="active">Личный кабинет</a></li>
+        <li><a href="#">Сообщения</a></li>
+        <li><a href="#">Люди</a></li>
+        <li><a href="resource_list.html">Ресурсы</a></li>
+        <li><a href="project_list.html">Проекты</a></li>
+        <li><a href="organization.html">Организации</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Диск</a></li>
+        <li><a href="#">Связи</a></li>
+        <li><a href="#">Знания</a></li>
+        <li><a href="#">Заметки</a></li>
+      </ul>
     </nav>
 </div>
 <div class="dashboard-container content">
@@ -62,10 +54,13 @@
           <th>Your balance: </th><th>10.0000 FPN</th>
         </tr>
         <tr class="people-ref">
-          <th>Your referals: </th><th>2 people <span class="list">(list)</span></th>
+          <th>Your referals: </th><th>7 people <span class="list">(list)</span></th>
         </tr>
         <tr>
-          <th>Your referals: </th><th>25 FPT <span class="view">(view)</span></th>
+          <th>Your level: </th><th>1.5<span class="view">(view)</span></th>
+        </tr>
+        <tr>
+          <th>Your rating: </th><th>0.986</th>
         </tr>
       </table>
       <table cellpadding="0" cellspacing="0" class="list-block disp-none">
@@ -78,7 +73,7 @@
       </table>
       <table cellpadding="0" cellspacing="0" class="view-block disp-none">
         <tr>
-          <th>2 referals = </th><th>15 FPT</th>
+          <th>7 referals = </th><th>140 FPT</th>
         </tr>
         <tr>
           <th>10 FPN = </th><th>10 FPT</th>
@@ -111,40 +106,84 @@
   </div>
 
   <div class="goalmap">
-    <div class="container">
       <div class="row bs-wizard" style="border-bottom:0;">
-        <div class="bs-wizard-info info">
-          <dl>
-            <dt>Bounties</dt>
-            <dd> Inwite 5 friends</dd>
-            <dt>Rewards</dt>
-            <dd> 12.5% from referrals investments</dd>
-          </dl>
+
+        <div class="col-xs-2 bs-wizard-step complete">
+          <div class="bs-wizard-info info">
+            <dl>
+              started
+              <dt>Bounties</dt>
+              <dd> Inwite 0 friends</dd>
+              <dt>Rewards</dt>
+              <dd> 0.5% from referrals investments</dd>
+            </dl>
+          </div>
+          <div class="text-center bs-wizard-stepnum">Start</div>
+          <div class="progress">
+            <div class="progress-bar"></div>
+          </div>
+          <a href="#" class="bs-wizard-dot"></a>
         </div>
-        <div class="col-xs-3 bs-wizard-step complete">
+
+        <div class="col-xs-2 bs-wizard-step complete">
+          <div class="bs-wizard-info info">
+            <dl>
+              <dt>Bounties</dt>
+              <dd> Inwite 5 friends</dd>
+              <dt>Rewards</dt>
+              <dd> 12.5% from referrals investments</dd>
+            </dl>
+          </div>
           <div class="text-center bs-wizard-stepnum">Level 1</div>
           <div class="progress">
             <div class="progress-bar"></div>
           </div>
           <a href="#" class="bs-wizard-dot"></a>
         </div>
-        <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
+
+        <div class="col-xs-2 bs-wizard-step disabled">
+          <div class="bs-wizard-info info">
+            <dl>
+              <dt>Bounties</dt>
+              <dd> Inwite 5 friends</dd>
+              <dt>Rewards</dt>
+              <dd> 12.5% from referrals investments</dd>
+            </dl>
+          </div>
           <div class="text-center bs-wizard-stepnum">Level 2</div>
           <div class="progress"><div class="progress-bar"></div></div>
           <a href="#" class="bs-wizard-dot"></a>
         </div>
-        <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
+
+        <div class="col-xs-2 bs-wizard-step disabled">
+          <div class="bs-wizard-info info">
+            <dl>
+              <dt>Bounties</dt>
+              <dd> Inwite 15 friends</dd>
+              <dt>Rewards</dt>
+              <dd> 15.5% from referrals investments</dd>
+            </dl>
+          </div>
           <div class="text-center bs-wizard-stepnum">Level 3</div>
           <div class="progress"><div class="progress-bar"></div></div>
           <a href="#" class="bs-wizard-dot"></a>
         </div>
-        <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+
+        <div class="col-xs-2 bs-wizard-step disabled">
+          <div class="bs-wizard-info info">
+            <dl>
+              <dt>Bounties</dt>
+              <dd> Inwite 20 friends</dd>
+              <dt>Rewards</dt>
+              <dd> 17.5% from referrals investments</dd>
+            </dl>
+          </div>
           <div class="text-center bs-wizard-stepnum">Level 4</div>
           <div class="progress"><div class="progress-bar"></div></div>
           <a href="#" class="bs-wizard-dot"></a>
         </div>
+
       </div>
-    </div>
   </div>
 
   <div class="dashboard-block dashboard-footer">
