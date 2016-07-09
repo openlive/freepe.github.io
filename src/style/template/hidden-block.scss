@@ -1,0 +1,38 @@
+.hidden-block{
+  min-height: 26px;
+}
+.hidden-block__header{
+  box-sizing: border-box;
+  height: 21px;
+  padding: 0 7px 0 8px;
+  position: relative;
+  background: $main_bg;
+  color: $new-color;
+  font-size: 11px;
+  line-height: 21px;
+  cursor: pointer;
+  &:after{
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    width: 15px;
+    height: 7px;
+    background: url("../img/arr-hide-block.png") no-repeat;
+  }
+  &.show-body{&:after{background: url("../img/arr-show-block.png") no-repeat !important;}}
+}
+.hidden-block__body{
+  display: block;
+  transition: display .5s;
+  &.body-animate-hidden{
+    display: none;
+  }
+  .item_list {
+    .item {
+      a{
+        background: $hidden-body-item-caption;
+      }
+    }
+  }
+}

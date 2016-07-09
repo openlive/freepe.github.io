@@ -1,0 +1,35 @@
+header{
+  background: $main_bg;
+  height: 31px;
+  padding: 9px 12px 0 12px;
+  font-size: 14px;
+  .container{
+    box-sizing: border-box;
+    width: 770px;
+    padding: 0 15px 0 0;
+  }
+  a{
+    color: $new-color;
+  }
+  .logo{
+    float: left;
+    height: 30px;
+    img{
+      width: 120px;
+    }
+  }
+  span{
+    margin-left: 35px;
+    color: $new-color;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  nav{
+    float: right;
+    margin-top: 5px;
+    a{
+      margin: 5px;
+      font-size: 12px;
+    }
+  }
+}
