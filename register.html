@@ -4,16 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="description" content=""/>
 <title>Settings</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<style>
-		.check{margin-left:20px!important}.left{text-align:left!important}
-		.container-fluid{margin-top:50px;margin-bottom:50px;padding-left:100px!important;}
-	</style>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="container">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" property="">
+<div class="container-register">
 	<div class="row">
-		<div class="container-fluid">
+		<div class="container-fluid container-fluid-register">
 			<div class="col-md-4 logo"> 
 				<a href="#" ><img src="img/logo-3.png" class="img-responsive"/></a>
 			</div>
@@ -22,70 +19,70 @@
 			<form role="form" class="form-horizontal">
 				<div class="form-group">
 					<div class="col-xs-6">
-	     				<input name="name" type="name" class="form-control" placeholder="Nickname" required> 
+	     				<input name="name" type="name" class="form-control" placeholder="Логин" required>
 	  				</div>
 	  				<div class="col-xs-6">
-	     				<input name="name" type="name" class="form-control" placeholder="Legal name" required> 
+	     				<input name="name" type="name" class="form-control" placeholder="Реальное имя" required>
 	  				</div>
   				</div>
   				<div class="form-group">
-			      <label for="email" class="control-label col-sm-2 left">Current email:</label>	  
+			      <label for="email" class="control-label col-sm-2 left-register">Ваш e-mail:</label>
 				  <div class="col-sm-8">
 			         <input name="email" type="email" class="form-control" placeholder="abc@freepe.com"/> 
 				  </div>
 				  <div class="col-sm-2">
-				  	<input type="submit" class="btn btn-info col-sm-12" value="change" />
+				  	<input type="submit" class="btn btn-info col-sm-12 btn-register" value="изменить" />
 				  </div>
 			   </div>
 				 <div class="form-group">
 					 <div class="col-xs-6">
-					 	<input type="password" data-toggle="validator" data-minlength="6" class="form-control" id="inputPassword" placeholder="New password" required>
+					 	<input type="password" data-toggle="validator" data-minlength="6" class="form-control" id="inputPassword" placeholder="Новый пароль" required>
 					 </div>
 					 <div class="col-xs-6">
-						<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="" placeholder="Repeat" required>
+						<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="" placeholder="Повторите пароль" required>
 					</div>
 				</div>
 				<div class="form-group">
-			      <label for="checkbox" class="control-label col-sm-2 left">Select a role</label>	  
-				  <div class="col-sm-3 check">
+			      <label for="checkbox" class="control-label col-sm-2 left-register">Ваши роли:</label>
+				  <div class="col-sm-3 check-register">
 			         <label class="checkbox">
-						<input type="checkbox" value="option1"> Human igniter;
+						<input type="checkbox" value="option1">Работа с людьми;
 					</label>
 					<label class="checkbox">
-						<input type="checkbox" value="option1"> Core worker;
+						<input type="checkbox" value="option1">Разработчик;
 					</label>
 				  </div>
-				  <div class="col-sm-3 check">
+				  <div class="col-sm-3 check-register">
 			         <label class="checkbox">
-						<input type="checkbox" value="option1"> Smart investor;
+						<input type="checkbox" value="option1">Вкладчик;
 					</label>
 					<label class="checkbox">
-						<input type="checkbox" value="option1"> Free user;
+						<input type="checkbox" value="option1">Пользователь;
 					</label>
 				  </div>
 			   </div>
 			   <div class="form-group">
-			      <label for="checkbox" class="control-label col-sm-2 left">Sabscribe to:</label>	  
-				  <div class="col-sm-3 check">
+			      <label for="checkbox" class="control-label col-sm-2 left-register">Подписка на:</label>
+				  <div class="col-sm-3 check-register">
 			         <label class="checkbox">
-						<input type="checkbox" value="option1"> Freepe news;
+						<input type="checkbox" value="option1"> FreePe новости;
 					</label>
 					<label class="checkbox">
-						<input type="checkbox" value="option1"> Freepe guides;
+						<input type="checkbox" value="option1"> FreePe гайды;
 					</label>
 				  </div>
-				  <div class="col-sm-3 check">
+				  <div class="col-sm-3 check-register">
 			         <label class="checkbox">
-						<input type="checkbox" value="option1"> Freepe reports;
+						<input type="checkbox" value="option1"> FreePe отчеты;
 					</label>
 					<label class="checkbox">
-						<input type="checkbox" value="option1"> Freepe introduction;
+						<input type="checkbox" value="option1"> FreePe введение;
 					</label>
 				  </div>
 			   </div>
 			    <div class="col-md-12 center-block">
-				    <button id="singlebutton" name="singlebutton" class="btn btn-primary center-block">
-				        Save
+				    <button id="singlebutton" name="singlebutton" class="btn btn-primary center-block btn-register">
+				        Зарегистрироваться
 				    </button>
 				</div>
 			</form>
